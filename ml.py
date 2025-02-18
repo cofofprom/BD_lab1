@@ -18,7 +18,7 @@ def main():
 
     producer = Producer(producer_conf)
 
-    clf = CatBoostClassifier().load_model('catboost.model')
+    clf = CatBoostClassifier().load_model('model_data/catboost.model')
 
     while True:
         msg = consumer.poll(1)

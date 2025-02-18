@@ -30,6 +30,7 @@ consumer = Consumer(consumer_conf)
 consumer.subscribe(['prediction'])
 
 st.title("Diabetes prediction model metrics view")
+st.text("(metrics are counted on 100 previous records)")
 
 st.title("Accuracy")
 acc_chart = st.empty()

@@ -32,8 +32,8 @@ def main():
 
     producer = Producer(producer_conf)
 
-    cat_prep = load('cat.prep')
-    num_prep = load('num.prep')
+    cat_prep = load('model_data/cat.prep')
+    num_prep = load('model_data/num.prep')
 
     non_cat_cols = ['BMI', 'MentHlth', 'PhysHlth', 'Age', 'Income']
 

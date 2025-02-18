@@ -8,6 +8,8 @@
 
 Соответственно так же используется 3 консюмера: raw data consumer, preprocessed data consumer, ml consumer. Последний работает на стороне streamlit приложения.
 
+В docker compose создаются 2 брокера
+
 ## Dataset
 В работе использован https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset
 
@@ -19,3 +21,5 @@ OneHotEncoder + StandardScaler, в качестве модели был выбр
 - Raw data consumer + Preprocessed data producer: python3 preprocessing.py
 - Preprocessed data consumer + ML producer: python3 ml.py
 - ML consumer + metrics visualization: streamlit run app.py
+
+Разные файлы для разных продюсеров дают возможность развернуть всю эту систему на кластере
